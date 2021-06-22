@@ -1,0 +1,129 @@
+:root {
+	/* //Primary */
+	--light-red: hsl(356, 100%, 66%); /*(CTA text)*/
+	--very-light-red: hsl(355, 100%, 74%); /*(CTA hover background)*/
+	--very-dark-blue: hsl(208, 49%, 24%); /*(headings)*/
+	--headings: hsl(208, 49%, 24%);
+
+	/* // Neutral */
+	--white: hsl(0, 0%, 100%);
+	--grayish-blue: hsl(240, 2%, 79%);
+	--very-dark-grayish-blue: hsl(207, 13%, 34%);
+	--very-dark-black-blue: hsl(240, 10%, 16%);
+
+	/* // Background gradient - Intro/CTA mobile nav: */
+	--background-gradient: linear-gradient(
+		120deg,
+		hsl(13, 100%, 72%),
+		hsl(353, 100%, 62%)
+	);
+	--very-light-red: hsl(13, 100%, 72%);
+	--light-red: hsl(353, 100%, 62%);
+
+	/* // Background gradient - body: */
+	--very-dark-gray-blue: hsl(237, 17%, 21%);
+	--very-dark-desaturated: hsl(237, 23%, 32%);
+}
+
+/* // Some basic defaults --global */
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--headings);
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+body {
+	font-family: "Overpass", sans-serif;
+}
+
+.btn-light {
+	color: var(--light-red);
+	font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: var(--white);
+	padding: 50px 0;
+	width: 300px;
+	border-radius: 8px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+	margin: auto;
+}
+
+.navbar ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 10px 0;
+}
+.navbar ul li {
+	margin: 10px;
+}
+/* Showcase */
+.showcase {
+	background-image: var(--background-gradient);
+	height: 400px;
+	border-bottom-left-radius: 100px;
+}
+
+.showcase .overlay {
+	background: url("./images/bg-pattern-intro.svg");
+	background-repeat: no-repeat;
+	background-size: center/cover;
+	min-height: 400px;
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		position: relative;
+		background-color: transparent;
+		box-shadow: none;
+		width: auto;
+		padding: 0;
+		left: 0;
+		top: 0;
+		transform: translateX(0%);
+	}
+
+	.navbar ul {
+		flex-direction: row;
+	}
+
+	.navbar ul li {
+		color: var(--white);
+		margin: 0;
+	}
+}
+
+@media (min-width: 1024px) {
+	.showcase,
+	.showcase .overlay {
+		height: 600px;
+	}
+}
