@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import logo from "../images/logo.svg";
 import Buttons from "./Buttons";
-import { footer } from "./Footer";
+import { footer } from "./footerLinks";
 import Menu from "./Menu";
 
 const Header = () => {

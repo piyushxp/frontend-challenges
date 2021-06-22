@@ -99,6 +99,10 @@ body {
 	min-height: 400px;
 }
 
+.footer {
+	background-color: var(--very-dark-black-blue);
+}
+
 @media (min-width: 768px) {
 	.navbar {
 		position: relative;

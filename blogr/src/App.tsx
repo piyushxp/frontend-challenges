@@ -5,6 +5,7 @@ import Showcase from "./components/Showcase";
 import Header from "./components/Header";
 import Designed from "./components/Designed";
 import Free from "./components/Free";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 			<Showcase />
 			<Designed />
 			<Free />
+			<Footer />
 		</div>
 	);
 }

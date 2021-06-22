@@ -1,21 +1,25 @@
-import { v4 as uuidv4 } from "uuid";
+import logo from "../images/logo.svg";
+import { footer as footerLinks } from "./footerLinks";
 
-export const footer = [
-	{
-		id: uuidv4(),
-		title: "Product",
-		link: ["Overview", "Pricing", "Marketplace", "Features", "Integrations"],
-	},
+const Footer = () => {
+	return (
+		<footer className='footer'>
+			<div>
+				<img src={logo} alt='' />
+			</div>
 
-	{
-		id: uuidv4(),
-		title: "Company",
-		link: ["Company", "About", "Team", "Blog", "Careers"],
-	},
+			<div>
+				{footerLinks.map(({ id, title, link }) => (
+					<ul key={id}>
+						<h4>{title}</h4>
+						{link.map((link) => (
+							<li key={link}>{link}</li>
+						))}
+					</ul>
+				))}
+			</div>
+		</footer>
+	);
+};
 
-	{
-		id: uuidv4(),
-		title: "Connect",
-		link: ["Contact", "Newsletter", "LinkedIn"],
-	},
-];
+export default Footer;
