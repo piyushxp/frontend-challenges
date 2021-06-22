@@ -4,6 +4,7 @@ import "./App.css";
 import Showcase from "./components/Showcase";
 import Header from "./components/Header";
 import Designed from "./components/Designed";
+import Free from "./components/Free";
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 			<Header />
 			<Showcase />
 			<Designed />
+			<Free />
 		</div>
 	);
 }
