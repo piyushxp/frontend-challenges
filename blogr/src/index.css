@@ -23,6 +23,12 @@
 	/* // Background gradient - body: */
 	--very-dark-gray-blue: hsl(237, 17%, 21%);
 	--very-dark-desaturated: hsl(237, 23%, 32%);
+
+	--state-linear-gradient: linear-gradient(
+		90deg,
+		hsl(237, 17%, 21%),
+		hsl(237, 23%, 32%)
+	);
 }
 
 /* // Some basic defaults --global */
@@ -99,8 +105,29 @@ body {
 	min-height: 400px;
 }
 
+/* State */
+.state {
+	background-image: var(--state-linear-gradient);
+	border-radius: 0 100px 0 100px;
+	margin: 100px 0 50px;
+	position: relative;
+}
+
+.state .state-img {
+	position: absolute;
+	top: -20%;
+	width: 300px;
+}
+
+/* Footer */
 .footer {
 	background-color: var(--very-dark-black-blue);
+	color: var(--grayish-blue);
+	border-top-right-radius: 100px;
+}
+
+.footer h4 {
+	color: var(--grayish-blue);
 }
 
 @media (min-width: 768px) {
