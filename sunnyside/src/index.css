@@ -105,7 +105,7 @@ ul {
 	color: var(--very-dark-sesaturated-blue);
 }
 
-.section-1 div article > button:first-child {
+.section-1 div article .btn-section-1:first-child {
 	border-bottom: 2px solid var(--yellow);
 }
 

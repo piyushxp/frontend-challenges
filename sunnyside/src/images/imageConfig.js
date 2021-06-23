@@ -1,4 +1,7 @@
 import logo from "../images/logo.svg";
+import imageDesign from "../images/image-graphic-design.jpg";
+import imagePhotography from "../images/image-photography.jpg";
+
 import arrowDown from "../images/icon-arrow-down.svg";
 import button from "../images/icon-hamburger.svg";
 import showcaseMobile from "../images/mobile/image-header.jpg";
@@ -14,4 +17,6 @@ export {
 	arrowDown,
 	transform,
 	standout,
+	imageDesign,
+	imagePhotography,
 };
