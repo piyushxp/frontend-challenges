@@ -7,7 +7,7 @@ const { default: MenuButton } = require("./MenuButton");
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<header className=' flex items-center justify-between p-5 '>
+		<header className='absolute w-full flex items-center justify-between p-5 '>
 			<div>
 				<Logo />
 			</div>

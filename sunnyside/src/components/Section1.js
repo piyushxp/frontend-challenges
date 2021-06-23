@@ -5,13 +5,15 @@ const Section1 = () => {
 	const [cards, setCards] = useState(section1);
 
 	return (
-		<section>
+		<section className='section-1 mt-0 flex flex-col'>
 			{cards.map(({ id, image, title, desc, button }) => (
-				<div key={id}>
-					<article>
-						<h2>{title}</h2>
+				<div key={id} className='flex flex-col-reverse'>
+					<article className='px-5 text-center '>
+						<h2 className='font-bold text-3xl mt-8'>{title}</h2>
 						<p>{desc}</p>
-						<button>{button}</button>
+						<button className='my-5 uppercase text-sm btn-section-1 border-b border-yellow-500'>
+							{button}
+						</button>
 					</article>
 
 					<div>
