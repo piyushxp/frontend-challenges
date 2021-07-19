@@ -1,0 +1,116 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	/* Primary Colors here */
+	--soft-red: hsl(7, 99%, 70%);
+	--yellow: hsl(51, 100%, 49%);
+	--graphic-design-text: hsl(167, 40%, 24%);
+	--photography-text: hsl(198, 62%, 26%);
+	--footer: hsl(168, 34%, 41%);
+
+	/* Neutral  Colors Here*/
+	--very-dark-desaturated-blue: hsl(212, 27%, 19%);
+	--very-dark-grayish-blue: hsl(213, 9%, 39%);
+	--dark-grayish-blue: hsl(232, 10%, 55%);
+	--grayish-blue: hsl(210, 4%, 67%);
+	--white: hsl(0, 0%, 100%);
+}
+
+body {
+	font-family: "Barlow", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Fraunces", sans-serif;
+	color: var(--very-dark-desaturated-blue);
+}
+
+p,
+li,
+button {
+	font-size: 18px;
+}
+
+p {
+	color: var(--dark-grayish-blue);
+}
+
+button {
+	font-family: "Fraunces", sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* Call to action btn */
+.btn-cta {
+	background-color: var(--yellow);
+	color: var(--white);
+	padding: 8px 20px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-family: "Fraunces", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+	background-color: var(--white);
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 75%;
+	max-width: 500px;
+	min-width: 250px;
+	text-align: center;
+	padding: 20px 0;
+	z-index: 10;
+}
+
+/* Showcase */
+.showcase .absolute {
+	z-index: -999;
+}
+
+.showcase {
+	background: url("./images/mobile/image-header.jpg") no-repeat center/cover;
+	height: calc(100vh - 20px);
+	width: 100%;
+}
+
+.showcase .overlay {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 100px);
+}
+
+/* Section-1 */
+
+.btn-section-1 {
+	color: var(--very-dark-sesaturated-blue);
+}
+
+.section-1 div article .btn-section-1:first-child {
+	border-bottom: 2px solid var(--yellow);
+}
+
+@media (min-width: 768px) {
+	.showcase {
+		background: url("./images/desktop/image-header.jpg") no-repeat center/cover;
+	}
+}
